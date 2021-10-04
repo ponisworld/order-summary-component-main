@@ -1,0 +1,116 @@
+* {margin:0;padding:0;font-size:15px;font-family:Arial, Helvetica, sans-serif}
+
+h1,h2 {font-size:2rem;padding: 1rem;}
+p {text-align: center;color:hsl(224, 23%, 55%);font-weight:600;}
+h4 {font-size:1rem;}
+.attribution { font-size: 0.6rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);}
+
+body {
+    background-image: url(../img/pattern-background-desktop.svg);
+    width: 100%;
+    background-color: rgb(224, 234, 255);background-position: top;
+    background-size: cover;background-repeat: no-repeat;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    background-color: #fff;
+    display:flex;
+    flex-direction:column;
+    width:40vw;
+    justify-content:center;
+    align-items:center;
+    margin: 1.2rem;
+    border-radius: 2em;
+}
+
+img {
+    width: inherit;
+}
+
+.principal {
+    border-radius: 2em 2em 0 0;
+}
+button {
+    border:none;
+    background-color:#fff;
+    margin:0.5rem;
+    padding: 0.2rem;
+    cursor:pointer;
+}
+
+.buttoninfo {
+    display: flex;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background-color:hsl(225, 100%, 98%) ;
+    padding: 0.6rem;
+    margin:0.2rem;
+}
+
+.change {
+    background-color: hsl(225, 100%, 98%);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+}
+
+.change:hover {
+    color:hsla(245, 75%, 52%, 0.6);
+}
+.minigrid {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items:center;
+    align-content:center;
+    place-self: center;
+    margin: 1.2rem;
+}
+
+
+.message {padding:1rem;}
+.payment {
+    width: 20rem;
+background-color: hsl(245, 75%, 52%);
+border-radius:0.5rem;
+color:#fff;
+font-weight: 900;
+padding: 0.75rem;
+}
+
+.cancel {
+color:hsl(224, 23%, 55%);
+font-weight: 600;
+}
+
+.payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+.cancel:hover {
+    color:hsla(224, 23%, 55%, 0.6);  
+}
+
+@media screen and (max-width:800px) {
+    main {width:60vw}
+}
+
+@media screen and (max-width:550px) {
+    main {width:85vw}
+    .payment {width:15rem}
+}
+
+@media screen and (max-width:300px) {
+    * {font-size:14px}
+    .minigrid {margin:1rem}
+    .buttoninfo {height:2rem;}
+    .payment {width:10rem}
+    .image {width: 2.5rem;height: 2.5rem;}
+}
