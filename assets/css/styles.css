@@ -52,6 +52,8 @@ button {
     background-color:hsl(225, 100%, 98%) ;
     padding: 0.6rem;
     margin:0.2rem;
+    justify-content:center;
+    align-items:center;
 }
 
 .change {
@@ -104,20 +106,22 @@ font-weight: 600;
 }
 
 @media screen and (max-width:550px) {
-    main {width:85vw;}
+    main {width:80vw; height: fit-content;margin:10rem;}
+    .change {margin:0;}
+    .annual {font-size:0.9rem}
+    .buttoninfo {width:14rem;height:3rem;}
+    .image {width:2rem;height:2rem;}
     .payment {width:15rem}
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:330px) {
     * {font-size:12px;margin:0;padding:0;}
     h2 {text-align:center;}
-    main {margin:10rem;height:fit-content;width:85vw;}
+    main {height:fit-content;width:85vw;}
     .minigrid {margin:0;}
-    .change {margin:0;}
     .annual {font-size:0.7rem;}
     .year {font-size:0.7rem;text-align: left;
     }
     .buttoninfo {height:2rem;width:10rem;font-size:0.8rem;}
     .payment {width:12rem;}
-    .image {width: 2rem;height: 2rem;}
 }
